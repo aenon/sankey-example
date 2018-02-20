@@ -1,0 +1,16 @@
+source,target,value
+NetCamHD,domestic,5
+NetCamHD,vlan,4
+NetCamHD,international,1
+domestic,api.xyz.net,4
+domestic,time.peach.com,1
+vlan,streamcast,3
+vlan,192.155.10.80,1
+international,116.112.54.321,1
+streamcast,tcp,1
+streamcast,udp,2
+192.155.10.80,dhcp,1
+api.xyz.net,tcp,3
+api.xyz.net,ssl,1
+time.peach.com,ntp,1
+116.112.54.321,ftp,1
