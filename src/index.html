@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>SANKEY Experiment</title>
+<title>Zingbox Sankey Diagram</title>
 <style>
 
+#chart {
+  margin: 5vw;
+  text-align: center;
+}
 .node rect {
   cursor: move;
   fill-opacity: .9;
@@ -17,7 +21,7 @@
 .link {
   fill: none;
   stroke: #000;
-  stroke-opacity: .2;
+  stroke-opacity: .05;
 }
 
 .link:hover {
@@ -34,7 +38,7 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.7.1/d3-sankey.js"></script> -->
 <script>
 
-var units = "Widgets";
+var units = "units of traffic";
 
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
     width = 700 - margin.left - margin.right,
@@ -54,7 +58,7 @@ var svg = d3.select("#chart").append("svg")
 
 // Set the sankey diagram properties
 var sankey = d3.sankey()
-    .nodeWidth(36)
+    .nodeWidth(8)
     .nodePadding(40)
     .size([width, height]);
 
